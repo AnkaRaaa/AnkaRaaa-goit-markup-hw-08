@@ -1,0 +1,49 @@
+/* Флекс списка клиентов */
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+/* Блоки в списке клиентов */
+.clients__item {
+  flex-basis: calc((100% - 60px) / 2);
+  margin: 15px;
+  height: 92px;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 180px) / 6);
+  }
+}
+
+/* Флекс на ссылки клиентов */
+.clients__link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  color: #afb1b8;
+
+  transition: color var(--tr-duration) var(--tr-function),
+    border-color var(--tr-duration) var(--tr-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+
+/* Наследование цвета иконками */
+.clients__icon {
+  fill: currentColor;
+}
