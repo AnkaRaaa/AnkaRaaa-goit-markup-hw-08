@@ -1,0 +1,130 @@
+.footer {
+  padding: 60px 0;
+
+  background-color: #2f303a;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.logo__wrapper--white {
+  color: #ffffff;
+}
+
+.footer-info {
+  font-style: normal;
+}
+
+.footer-contacts__item {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.footer-contacts__map {
+  line-height: 1.71;
+  color: #ffffff;
+
+  transition: color var(--tr-duration) var(--tr-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer-contacts__link {
+  transition: color var(--tr-duration) var(--tr-function);
+
+  display: inline-block;
+
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+/ .footer-title {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  color: #ffffff;
+  text-transform: uppercase;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+
+.footer-social-networks {
+  display: inline-flex;
+}
+
+.footer-social-networks__item {
+  width: 44px;
+  height: 44px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.footer-social-networks__link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+  color: #ffffff;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  transition: background-color var(--tr-duration) var(--tr-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.footer-social-networks__icon {
+  fill: currentColor;
+}
+
+.wrapper--left-pos {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-left: 65px;
+    text-align: center;
+    margin-right: 165px;
+  }
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
+}
+
+.wrapper--right-pos {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+}
+
+.footer__container {
+  flex-wrap: wrap;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
