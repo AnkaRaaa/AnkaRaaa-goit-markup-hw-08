@@ -21,13 +21,13 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- Заголовок страницы с названием студии и навигацией -->
+    <!-- Верхняя линия -->
     <header class="page-header">
       <div class="container page-header__container">
         <a class="logo page-header__logo" href="" lang="en"
           ><span class="logo__wrapper logo__wrapper--blue">Web</span>Studio
         </a>
-        <!-- Основная навигация -->
+
         <nav class="page-header__menu">
           <ul class="nav">
             <li class="nav__item">
@@ -41,7 +41,7 @@
             </li>
           </ul>
         </nav>
-        <!-- Почта и телефон для связи -->
+
         <ul class="main-contacts">
           <li class="main-contacts__item">
             <a class="main-contacts__link" href="mailto:info@devstudio.com"
@@ -61,7 +61,7 @@
             </a>
           </li>
         </ul>
-        <!-- Кнопка открытия мобильного меню -->
+        <!-- mob-menu -->
         <button class="open-mob-menu js-open-menu" type="button" aria-expanded="false">
           <svg
             class="open-mob-menu__icon"
@@ -73,7 +73,7 @@
           </svg>
         </button>
       </div>
-      <!-- Мобильное меню -->
+
       <div class="mob-menu js-menu-container">
         <button class="close-mob-menu js-close-menu" type="button">
           <svg
@@ -126,9 +126,8 @@
         </ul>
       </div>
     </header>
-    <!-- Уникальная информация на странице -->
+    <!-- Шапка профиля -->
     <main>
-      <!-- Секция заказа услуги -->
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">
@@ -138,7 +137,7 @@
           <button class="hero__button" data-modal-open type="button">Заказать услугу</button>
         </div>
       </section>
-      <!-- Секция со списком особенностей (преимуществ) -->
+      <!-- Особенности -->
       <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Преимущества нашей студии</h2>
@@ -193,7 +192,7 @@
           </ul>
         </div>
       </section>
-      <!-- Секция о нашей работе -->
+      <!-- Ознакомление  -->
       <section class="section section--reset-indent">
         <div class="container">
           <h2 class="section-title section__section-title">Чем мы занимаемся</h2>
@@ -205,7 +204,7 @@
                     srcset="./image/desktop/box1.jpg 1x, ../../box@2x.jpg 2x"
                     media="(min-width: 1200px)"
                   />
-                  <img src=".//image/desktop/box1.jpg" alt="Занимаемся написанием кода" />
+                  <img src="./image/desktop/box1.jpg" alt="Занимаемся написанием кода" />
                 </picture>
                 <h3 class="work__title">Десктопные приложения</h3>
               </div>
@@ -228,10 +227,7 @@
             <li class="work__item">
               <div class="work__thumb">
                 <picture>
-                  <source
-                    srcset="../../image/desktop/box3.jpg 1x, ../../box3@2x.jpg"
-                    media="(min-width: 1200px)"
-                  />
+                  <source srcset="../image/desktop/box3.jpg 1x" media="(min-width: 1200px)" />
                   <img src="./image/desktop/box3.jpg" alt="Тестируем приложения" />
                 </picture>
                 <h3 class="work__title">Дизайнерские решения</h3>
