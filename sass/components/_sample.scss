@@ -26,27 +26,27 @@
   }
 }
 
-.sample {
+.work {
   @media screen and (min-width: 1200px) {
     display: flex;
     margin: -15px;
   }
 }
 
-.sample__item {
+.work__item {
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 90px) / 3);
     margin: 15px;
   }
 }
 
-.sample__thumb {
+.work__thumb {
   @media screen and (min-width: 1200px) {
     position: relative;
   }
 }
 
-.sample__title {
+.work__title {
   @media screen and (min-width: 1200px) {
     position: absolute;
     bottom: 0;
