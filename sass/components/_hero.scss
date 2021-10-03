@@ -9,7 +9,7 @@
 
   background-color: #696969;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../image/mobile/imghero.jpg);
+    url(../image/mobile/imghero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -18,17 +18,17 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../image/mobile/imghero@2x.jpg);
+      url(../image/mobile/imghero@2x.jpg);
   }
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../image/tablet/imghero.jpg);
+      url(../image/tablet/imghero.jpg);
     @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../image/tablet/imghero@2x.jpg);
+        url(../image/tablet/imghero@2x.jpg);
     }
   }
   @media screen and (min-width: 1200px) {
