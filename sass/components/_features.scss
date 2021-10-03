@@ -1,4 +1,3 @@
-/* Флекс на список преимуществ */
 .features {
   @media screen and (min-width: 768px) {
     display: flex;
@@ -7,7 +6,6 @@
   }
 }
 
-/* Размер элементов в списке преимуществ */
 .features__item {
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
@@ -23,7 +21,7 @@
   }
 }
 
-/* Фон под иконки */
+//  Фон
 .features__wrapper {
   display: flex;
   height: 120px;
@@ -35,7 +33,6 @@
   border-radius: 4px;
 }
 
-/* Подзаголовки списка преимуществ */
 .features__title {
   margin-bottom: 10px;
 
@@ -48,7 +45,6 @@
   }
 }
 
-/* Текс в подзаголовках преимуществ */
 .features__text {
   line-height: 1.71;
   color: var(--text-color);
