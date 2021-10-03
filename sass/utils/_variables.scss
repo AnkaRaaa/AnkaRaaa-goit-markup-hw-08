@@ -1,0 +1,35 @@
+:root {
+  --main-title-color: #ffffff;
+  --secondary-title-color: #212121;
+  --text-color: #757575;
+  --accent-color: #2196f3;
+  --button-bg-color: #f5f4fa;
+  --tr-duration: 250ms;
+  --tr-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@mixin text-value($fs, $fw, $lh) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+@keyframes puls {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
